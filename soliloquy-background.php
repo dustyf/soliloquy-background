@@ -27,8 +27,6 @@ License URI: http://www.opensource.org/licenses/gpl-license.php
 	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-// add_filter('tgmsp_image_output', '<img class="soliloquy-item-image" src="' . esc_url( $image['src'] ) . '" alt="' . esc_attr( $alt ) . '" title="' . esc_attr( $title ) . '" />', $id, $image, $alt, $title );
-
 add_filter('tgmsp_slider_item_style', 'add_soliloquy_bg_image', 10, 4);
 function add_soliloquy_bg_image($style, $id, $image, $i) {
 	$style = 'background-image:url(' . $image['src'] . ');';
