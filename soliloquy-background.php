@@ -30,7 +30,6 @@ License URI: http://www.opensource.org/licenses/gpl-license.php
 add_filter('tgmsp_slider_item_style', 'add_soliloquy_bg_image', 10, 4);
 function add_soliloquy_bg_image($style, $id, $image, $i) {
 	$style = 'background-image:url(' . $image['src'] . ');';
-	var_dump($image);
 	return $style;
 }
 
